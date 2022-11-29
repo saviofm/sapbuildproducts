@@ -15,8 +15,8 @@ namespace sapbuildproducts;
 //------------------------------------------------------//
 //Entity
 entity Products : cuid , managed {
-      EAN : String not null;
-      productName : String not null;
+      EAN : String;
+      productName : String;
       productDescription : String;
       brand : String;
       obs: LargeString;
