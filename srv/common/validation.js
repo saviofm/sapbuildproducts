@@ -39,7 +39,7 @@ async function ProductUpdate(req){
             return req.error(410, txt);
         }
     }
-
+/*
     //Validar ImageType
     if (req.data.imageType !== undefined){
         if(req.data.imageType === null){
@@ -55,6 +55,7 @@ async function ProductUpdate(req){
         }
         
     }
+*/
 };
 
 async function ProductDelete(req){
