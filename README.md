@@ -1,2 +1,2 @@
 # sapbuildproducts
-Cap products API for APPGyver
+Cap products API for SAP Build Apps
