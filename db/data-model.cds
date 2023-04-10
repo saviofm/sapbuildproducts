@@ -48,10 +48,6 @@ annotate Products with @(
     description : '{i18n>EAN}',
     Common      : {
         FieldControl             : #Mandatory,
-    //  Text : {
-    //    $value                 : productDescription,
-    //    ![@UI.TextArrangement] : #TextLast
-    //  }
     }
   );
   productName @(

@@ -6,6 +6,7 @@ using CatalogService from './cat-service';
 //List Page
 annotate CatalogService.ProductsFiori with @(UI: {
         LineItem: [
+
 			{   
                 $Type: 'UI.DataField', 
                 Value: productName,
@@ -44,12 +45,12 @@ annotate CatalogService.ProductsFiori with @(UI: {
             Title : { 
                 Value: productName
             },
-            TypeName: '{i18n>Demos}',
-            TypeNamePlural: '{i18n>Demo}',
-            //ImageUrl : demoImageURL,
+            TypeName: '{i18n>Product}',
+            TypeNamePlural: '{i18n>Products}',
+            ImageUrl : image,
             ///TypeImageUrl : 'image/png',
             Description: { 
-                Value: productDescription 
+                Value: EAN 
             }, 
         },
 		HeaderFacets            : [
@@ -65,6 +66,10 @@ annotate CatalogService.ProductsFiori with @(UI: {
 			Data: [
                 {
                     $Type : 'UI.DataField',
+                    Value: productDescription
+                },
+                {
+                    $Type : 'UI.DataField',
                     Value: brand
                 },
                 {
@@ -73,23 +78,10 @@ annotate CatalogService.ProductsFiori with @(UI: {
                 }               
 			]                        
         },
-        FieldGroup #Image: {
-            Data : [
-                {
-                    $Type : 'UI.DataField',
-                    Value : image,
-                    Label : ''        
-                }
-            ]
-        },
-     
+
         // Page Facets
 		Facets: [
-            {
-                $Type             : 'UI.ReferenceFacet',
-                Target            : '@UI.FieldGroup#Image',
-                Label: '{i18n>Image}', 
-            },
+
             {    
                 $Type: 'UI.ReferenceFacet', 
                 Label: '{i18n>GeneralData}', 

@@ -5,8 +5,6 @@ const xsenv = require("@sap/xsenv");
 
 
 
-
-
 class CatalogRest extends cds.ApplicationService {
     init() {
 
